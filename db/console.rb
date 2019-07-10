@@ -11,15 +11,20 @@ artist1 = Artist.new({
 
   artist1.save()
 
-album1 = Album.new({
-  'title' => '1000 Forms of Fear',
-  'genre' => 'pop',
-  'artist_id' => artist1.id
-  })
+  album1 = Album.new({
+    'title' => '1000 Forms of Fear',
+    'genre' => 'pop',
+    'artist_id' => artist1.id
+    })
 
-album1.save()
+    album2 = Album.new({
+      'title' => 'This is Acting',
+      'genre' => 'pop',
+      'artist_id' => artist1.id
+      })
 
+      album1.save()
+      album2.save()
 
-
-  binding.pry
-  nil
+      binding.pry
+      nil
